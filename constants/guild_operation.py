@@ -1,0 +1,13 @@
+class GUILD_OPERATION():
+    CREATE_KEY = 'create_key'
+    EDIT_STATUS = 'edit_status'
+    EDIT_NAME = 'edit_name'
+    EDIT_USAGE_COUNT = 'edit_usage_count'
+    EDIT_GEN_OTP = 'edit_gen_otp'
+    EDIT_ASSIGN_ROLES = 'edit_assign_roles'
+    EDIT_REMOVE_ROLES = 'edit_remove_roles'
+    REMOVE_ALL_KEYS = 'remove_all'
+    REMOVE_KEY = 'remove_key'
+    SET_DASHBOARD_CH = 'set_dashboard_ch'
+    SET_VERIFICATION_CH = 'set_verification_ch'
+    SET_TIMEZONE = 'set_timezone'

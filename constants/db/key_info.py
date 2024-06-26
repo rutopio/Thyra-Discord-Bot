@@ -1,0 +1,27 @@
+class DB_KEY_INFO():
+    NAME = 'name'
+    PREVIOUS_NAME = 'pre_names'
+    STATUS = 'status'
+    TYPE = 'type'
+    COUNT = 'counts'
+    CREATOR_ID = 'creator_user_id'
+    CREATED_AT = 'created_at'
+    ASSIGN_ROLES = 'assign_roles'
+    REMOVE_ROLES = 'remove_roles'
+
+    USED_MEMBERS = 'used_users'
+    USED_MEMBERS__USER_ID = 'user_id'
+    USED_MEMBERS__TIMESTAMP = 'used_at'
+    USED_MEMBERS__ORDER = 'order'
+    USED_MEMBERS__PIN = 'pin'
+
+    OTPS = 'otp'
+    OTPS__SEED = 'seed'
+    OTPS__USED = 'used'
+    OTPS__UNUSED = 'unused'
+
+    EDITED = 'edit_history'
+    EDITED__USER_ID = 'user_id'
+    EDITED__AT = 'edited_at'
+    EDITED__EVENT = 'event'
+    EDITED__PREVIOUS_VALUE = 'pre_value'
