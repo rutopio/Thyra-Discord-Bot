@@ -4,18 +4,18 @@ import datetime
 import pytz
 from dotenv import load_dotenv
 
-from contents.utils.key import KeyUtilsContent
-from contents.embed.bot import BotEmbedContent
+from content.utils.key import KeyUtilsContent
+from content.embed.bot import BotEmbedContent
 
 from embed.general import GeneralEmbed
 
-from constants.usage_limits import USAGE_LIMIT
-from constants.enum.key_type import KEY_TYPE
-from constants.constants import CONSTANT
-from constants.db.key_info import DB_KEY_INFO
-from constants.db.guild_info import DB_GUILD_INFO
-from constants.key_type_name import KEY_TYPE_NAME
-from constants.edit_operation import EDIT_OPERATION
+from constant.usage_limits import USAGE_LIMIT
+from constant.enum.key_type import KEY_TYPE
+from constant.constants import CONSTANT
+from constant.db.key_info import DB_KEY_INFO
+from constant.db.guild_info import DB_GUILD_INFO
+from constant.key_type_name import KEY_TYPE_NAME
+from constant.edit_operation import EDIT_OPERATION
 
 from utils.times import TimeUtils
 from utils.role import RoleUtils

@@ -1,6 +1,6 @@
 import discord
 from utils.times import TimeUtils
-from constants.db.guild_info import DB_GUILD_INFO
+from constant.db.guild_info import DB_GUILD_INFO
 
 
 class GeneralContent():

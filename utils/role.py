@@ -1,6 +1,6 @@
 import discord
 
-from constants.role_selector import ROLE_SELECTOR
+from constant.role_selector import ROLE_SELECTOR
 
 
 class RoleUtils():

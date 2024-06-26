@@ -1,7 +1,7 @@
-from constants.enum.context_type import CONTEXT_TYPE
+from constant.enum.context_type import CONTEXT_TYPE
 
-from contents.commands.list import ListCommandContent
-from contents.commands.detail import DetailCommandContent
+from content.commands.list import ListCommandContent
+from content.commands.detail import DetailCommandContent
 from utils import general
 
 

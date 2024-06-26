@@ -1,11 +1,11 @@
-from constants.enum.context_type import CONTEXT_TYPE
-from constants.key_type_name import KEY_TYPE_NAME
-from contents.commands.create import CreateCommandContent
-from contents.commands.edit import EditCommandContent
-from contents.commands.detail import DetailCommandContent
-from contents.commands.remove import RemoveCommandContent
-from contents.commands.list import ListCommandContent
-from contents.commands.set import SetCommandContent
+from constant.enum.context_type import CONTEXT_TYPE
+from constant.key_type_name import KEY_TYPE_NAME
+from content.commands.create import CreateCommandContent
+from content.commands.edit import EditCommandContent
+from content.commands.detail import DetailCommandContent
+from content.commands.remove import RemoveCommandContent
+from content.commands.list import ListCommandContent
+from content.commands.set import SetCommandContent
 from utils import general
 
 

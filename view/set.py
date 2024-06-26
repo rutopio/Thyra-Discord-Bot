@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 from component.general import BasicViewComponent, ChannelSelector, CancelButton
 from component.set import SetDashboardChannelConfirmButton, SetVerificationChannelConfirmButton
 from embed.set import SetEmbed
-from contents.view.set import SetViewContent
+from content.view.set import SetViewContent
 
-from constants.db.guild_info import DB_GUILD_INFO
+from constant.db.guild_info import DB_GUILD_INFO
 from utils.mongodb import MongoDBUtils
 from utils import general
 

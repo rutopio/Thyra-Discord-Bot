@@ -1,7 +1,7 @@
-from constants.usage_limits import USAGE_LIMIT
-from contents.commands.list import ListCommandContent
-from contents.commands.edit import EditCommandContent
-from constants.enum.context_type import CONTEXT_TYPE
+from constant.usage_limits import USAGE_LIMIT
+from content.commands.list import ListCommandContent
+from content.commands.edit import EditCommandContent
+from constant.enum.context_type import CONTEXT_TYPE
 from utils import general
 
 

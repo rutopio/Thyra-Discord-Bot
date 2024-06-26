@@ -3,7 +3,7 @@ import discord
 from component.general import BasicViewComponent
 from component.detail import ShowAllPIN, ShowUnusedPIN, ShowUsedPIN
 from utils import general
-from contents.view.detail import DetailViewContent
+from content.view.detail import DetailViewContent
 
 
 class DetailView():

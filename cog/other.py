@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-from contents.commands.other import OtherCommandContent
+from content.commands.other import OtherCommandContent
 from embed.bot import BotEmbed
 from utils import general
 

@@ -6,13 +6,13 @@ from component.general import BasicViewComponent, AssignRoleSelector, RemoveRole
 from embed.edit import EditEmbed
 from embed.general import GeneralEmbed
 
-from contents.view.edit import EditViewContent
+from content.view.edit import EditViewContent
 
-from constants.usage_limits import USAGE_LIMIT
-from constants.guild_operation import GUILD_OPERATION
-from constants.db.key_info import DB_KEY_INFO
-from constants.db.guild_info import DB_GUILD_INFO
-from constants.edit_operation import EDIT_OPERATION
+from constant.usage_limits import USAGE_LIMIT
+from constant.guild_operation import GUILD_OPERATION
+from constant.db.key_info import DB_KEY_INFO
+from constant.db.guild_info import DB_GUILD_INFO
+from constant.edit_operation import EDIT_OPERATION
 
 from utils.logs import LogUtils
 from utils.mongodb import MongoDBUtils

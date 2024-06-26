@@ -1,11 +1,11 @@
 import discord
 from discord.ext import commands
 
-from contents.commands.list import ListCommandContent
+from content.commands.list import ListCommandContent
 from embed.list import ListEmbed
 from utils import general
 
-from constants.enum.key_type import KEY_TYPE
+from constant.enum.key_type import KEY_TYPE
 
 
 class ListCogs(commands.Cog):

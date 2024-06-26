@@ -1,8 +1,8 @@
 import discord
 
-from contents.embed.remove import RemoveEmbedContent
-from constants.enum.key_type import KEY_TYPE
-from constants.constants import CONSTANT
+from content.embed.remove import RemoveEmbedContent
+from constant.enum.key_type import KEY_TYPE
+from constant.constants import CONSTANT
 
 
 class RemoveEmbed():

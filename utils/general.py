@@ -9,15 +9,15 @@ from fuzzywuzzy import process
 from utils import general
 
 from embed.bot import BotEmbed
-from contents.embed.general import GeneralEmbedContent
-from contents.general import GeneralContent
+from content.embed.general import GeneralEmbedContent
+from content.general import GeneralContent
 
-from constants.enum.context_type import CONTEXT_TYPE
-from constants.db.guild_info import DB_GUILD_INFO
-from constants.constants import CONSTANT
-from constants.db.log_info import DB_LOG_INFO
-from constants.db.key_info import DB_KEY_INFO
-from constants.enum.key_type import KEY_TYPE
+from constant.enum.context_type import CONTEXT_TYPE
+from constant.db.guild_info import DB_GUILD_INFO
+from constant.constants import CONSTANT
+from constant.db.log_info import DB_LOG_INFO
+from constant.db.key_info import DB_KEY_INFO
+from constant.enum.key_type import KEY_TYPE
 from utils.logs import LogUtils
 from utils.mongodb import MongoDBUtils
 from utils.key import KeyUtils

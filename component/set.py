@@ -8,10 +8,10 @@ from component.welcome import WelcomeView
 from embed.set import SetEmbed
 from embed.bot import BotEmbed
 
-from contents.view.set import SetViewContent
+from content.view.set import SetViewContent
 
-from constants.guild_operation import GUILD_OPERATION
-from constants.db.guild_info import DB_GUILD_INFO
+from constant.guild_operation import GUILD_OPERATION
+from constant.db.guild_info import DB_GUILD_INFO
 
 from utils.logs import LogUtils
 from utils.mongodb import MongoDBUtils

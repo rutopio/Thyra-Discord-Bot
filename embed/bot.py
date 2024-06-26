@@ -3,13 +3,13 @@ import discord
 import datetime
 from dotenv import load_dotenv
 
-from contents.embed.bot import BotEmbedContent
+from content.embed.bot import BotEmbedContent
 
-from constants.constants import CONSTANT
-from constants.enum.key_type import KEY_TYPE
-from constants.guild_operation import GUILD_OPERATION
-from constants.db.key_info import DB_KEY_INFO
-from constants.db.guild_info import DB_GUILD_INFO
+from constant.constants import CONSTANT
+from constant.enum.key_type import KEY_TYPE
+from constant.guild_operation import GUILD_OPERATION
+from constant.db.key_info import DB_KEY_INFO
+from constant.db.guild_info import DB_GUILD_INFO
 
 from utils.times import TimeUtils
 from utils.mongodb import MongoDBUtils

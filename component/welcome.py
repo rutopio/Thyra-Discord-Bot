@@ -1,5 +1,5 @@
 import discord
-from contents.view.welcome import WelcomeViewContent
+from content.view.welcome import WelcomeViewContent
 from utils.verifier import Verifier
 from utils import general
 

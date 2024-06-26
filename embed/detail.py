@@ -4,12 +4,12 @@ import discord
 from dotenv import load_dotenv
 
 from utils import general
-from contents.embed.detail import DetailEmbedContent
+from content.embed.detail import DetailEmbedContent
 
-from constants.constants import CONSTANT
-from constants.db.key_info import DB_KEY_INFO
-from constants.db.guild_info import DB_GUILD_INFO
-from constants.db.user_info import DB_USER_INFO
+from constant.constants import CONSTANT
+from constant.db.key_info import DB_KEY_INFO
+from constant.db.guild_info import DB_GUILD_INFO
+from constant.db.user_info import DB_USER_INFO
 from utils.times import TimeUtils
 from utils.user import UserUtils
 from utils.mongodb import MongoDBUtils

@@ -1,5 +1,5 @@
 import discord
-from contents.view.component import ComponentViewContent
+from content.view.component import ComponentViewContent
 
 
 class BasicViewComponent(discord.ui.View):

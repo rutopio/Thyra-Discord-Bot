@@ -4,11 +4,11 @@ from dotenv import load_dotenv
 
 from embed.remove import RemoveEmbed
 
-from contents.view.remove import RemoveViewContent
+from content.view.remove import RemoveViewContent
 
-from constants.guild_operation import GUILD_OPERATION
-from constants.db.key_info import DB_KEY_INFO
-from constants.db.guild_info import DB_GUILD_INFO
+from constant.guild_operation import GUILD_OPERATION
+from constant.db.key_info import DB_KEY_INFO
+from constant.db.guild_info import DB_GUILD_INFO
 
 from utils.logs import LogUtils
 from utils.mongodb import MongoDBUtils

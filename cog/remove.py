@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-from contents.commands.remove import RemoveCommandContent
+from content.commands.remove import RemoveCommandContent
 from embed.general import GeneralEmbed
 from view.remove import RemoveView
 from utils import general

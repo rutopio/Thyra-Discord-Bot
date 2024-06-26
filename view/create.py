@@ -4,11 +4,11 @@ import discord
 from component.general import BasicViewComponent, AssignRoleSelector, RemoveRoleSelector, CancelButton
 from component.create import CreateKeyConfirmButton
 
-from contents.view.create import CreateViewContent
+from content.view.create import CreateViewContent
 from embed.create import CreateEmbed
 
-from constants.usage_limits import USAGE_LIMIT
-from constants.enum.key_type import KEY_TYPE
+from constant.usage_limits import USAGE_LIMIT
+from constant.enum.key_type import KEY_TYPE
 
 
 class CreateView():

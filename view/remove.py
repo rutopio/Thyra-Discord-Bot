@@ -3,9 +3,9 @@ import discord
 from component.general import BasicViewComponent, CancelButton
 from component.remove import RemoveAllKeysConfirmButton, RemoveKeyConfirmButton
 from embed.remove import RemoveEmbed
-from contents.view.remove import RemoveViewContent
+from content.view.remove import RemoveViewContent
 
-from constants.db.key_info import DB_KEY_INFO
+from constant.db.key_info import DB_KEY_INFO
 from utils.key import KeyUtils
 
 

@@ -6,11 +6,11 @@ import json
 
 from embed.bot import BotEmbed
 
-from constants.usage_limits import USAGE_LIMIT
-from constants.guild_operation import GUILD_OPERATION
-from constants.db.guild_info import DB_GUILD_INFO
-from constants.db.key_info import DB_KEY_INFO
-from constants.db.log_info import DB_LOG_INFO
+from constant.usage_limits import USAGE_LIMIT
+from constant.guild_operation import GUILD_OPERATION
+from constant.db.guild_info import DB_GUILD_INFO
+from constant.db.key_info import DB_KEY_INFO
+from constant.db.log_info import DB_LOG_INFO
 
 from utils.times import TimeUtils
 from utils.mongodb import MongoDBUtils
@@ -107,7 +107,7 @@ class LogUtils():
         while len(logs) > USAGE_LIMIT.MAX_NUMBER_OF_GUILD_LOGS():
             oldest_timestamp = min(logs.keys())
             del logs[oldest_timestamp]
-            # print('del oldest_timestamp, now length: ', len(logs))
+
         MongoDBUtils.update_by_keys(
             db_name=DATABASE_NAME,
             collection_name=GUILD_COLLECTION_NAME,
@@ -148,7 +148,6 @@ class LogUtils():
         while len(logs) > USAGE_LIMIT.MAX_NUMBER_OF_EDITED_KEY_LOGS():
             oldest_timestamp = min(logs.keys())
             del logs[oldest_timestamp]
-            # print('del oldest_timestamp, now length: ', len(logs))
 
         MongoDBUtils.update_by_keys(
             db_name=DATABASE_NAME,

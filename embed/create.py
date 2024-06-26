@@ -1,7 +1,7 @@
 import discord
 
-from contents.embed.create import CreateEmbedContent
-from constants.constants import CONSTANT
+from content.embed.create import CreateEmbedContent
+from constant.constants import CONSTANT
 
 
 class CreateEmbed():

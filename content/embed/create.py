@@ -1,5 +1,5 @@
-from constants.enum.context_type import CONTEXT_TYPE
-from contents.commands.edit import EditCommandContent
+from constant.enum.context_type import CONTEXT_TYPE
+from content.commands.edit import EditCommandContent
 from utils import general
 
 

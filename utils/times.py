@@ -3,10 +3,10 @@ import re
 import datetime
 from dotenv import load_dotenv
 
-from contents.utils.time import TimeUtilsContent
+from content.utils.time import TimeUtilsContent
 
-from constants.db.guild_info import DB_GUILD_INFO
-from constants.constants import CONSTANT
+from constant.db.guild_info import DB_GUILD_INFO
+from constant.constants import CONSTANT
 
 load_dotenv()
 DATABASE_NAME = os.getenv('DATABASE_NAME')

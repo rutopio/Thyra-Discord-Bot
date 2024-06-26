@@ -3,10 +3,10 @@ import datetime
 import discord
 from dotenv import load_dotenv
 
-from contents.embed.set import SetEmbedContent
-from constants.constants import CONSTANT
-from constants.db.guild_info import DB_GUILD_INFO
-from constants.db.log_info import DB_LOG_INFO
+from content.embed.set import SetEmbedContent
+from constant.constants import CONSTANT
+from constant.db.guild_info import DB_GUILD_INFO
+from constant.db.log_info import DB_LOG_INFO
 from utils.times import TimeUtils
 from utils.logs import LogUtils
 from utils.mongodb import MongoDBUtils

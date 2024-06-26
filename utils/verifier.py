@@ -4,11 +4,11 @@ from dotenv import load_dotenv
 
 from embed.set import SetEmbed
 
-from constants.enum.key_type import KEY_TYPE
-from constants.db.key_info import DB_KEY_INFO
-from constants.db.guild_info import DB_GUILD_INFO
-from constants.db.user_info import DB_USER_INFO
-from constants.role_selector import ROLE_SELECTOR
+from constant.enum.key_type import KEY_TYPE
+from constant.db.key_info import DB_KEY_INFO
+from constant.db.guild_info import DB_GUILD_INFO
+from constant.db.user_info import DB_USER_INFO
+from constant.role_selector import ROLE_SELECTOR
 
 from utils.role import RoleUtils
 from utils.mongodb import MongoDBUtils
@@ -36,18 +36,15 @@ class Verifier():
 
     async def get_auth_embed(self):
         embed = await self.steps_by_steps()
-        # print('self.is_verified', self.is_verified)
         return self.is_verified, embed
 
     async def steps_by_steps(self):
         if not self.is_key_valid_and_activate():
-            # print('is_key_valid_and_activate')
             return SetEmbed.get_invalid_key_or_pin_embed(self.interaction.user)
 
         self.key_type = self.key_info[DB_KEY_INFO.TYPE]
 
         if self.is_user_used_key_before():
-            # print('is_user_used_key_before')
             return SetEmbed.get_user_used_key_before_embed()
 
         if self.key_type == KEY_TYPE.REGULAR_KEY:
@@ -117,7 +114,6 @@ class Verifier():
             embed = await self.insert_new_key_to_collections()
             return embed
         else:
-            # print('self.pin in unused_pins and self.pin not in used_pins')
             return SetEmbed.get_invalid_key_or_pin_embed(user=self.user)
 
     async def insert_new_key_to_collections(self):

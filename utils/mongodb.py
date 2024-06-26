@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-from contents.general import GeneralContent
+from content.general import GeneralContent
 from utils import general
 
-from constants.db.left_info import DB_LEFT_INFO
+from constant.db.left_info import DB_LEFT_INFO
 
 load_dotenv()
 DATABASE_URI = os.getenv('MONGODB_URL')

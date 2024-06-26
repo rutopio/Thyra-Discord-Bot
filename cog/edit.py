@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-from contents.commands.edit import EditCommandContent
+from content.commands.edit import EditCommandContent
 from embed.general import GeneralEmbed
 from utils import general
 from utils.key import KeyUtils

@@ -1,10 +1,10 @@
 import discord
 
-from contents.embed.list import ListEmbedContent
-from constants.enum.key_type import KEY_TYPE
-from constants.enum.context_type import CONTEXT_TYPE
-from constants.constants import CONSTANT
-from constants.db.key_info import DB_KEY_INFO
+from content.embed.list import ListEmbedContent
+from constant.enum.key_type import KEY_TYPE
+from constant.enum.context_type import CONTEXT_TYPE
+from constant.constants import CONSTANT
+from constant.db.key_info import DB_KEY_INFO
 from utils import general
 from utils.key import KeyUtils
 

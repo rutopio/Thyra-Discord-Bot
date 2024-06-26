@@ -1,4 +1,4 @@
-from constants.key_type_name import KEY_TYPE_NAME
+from constant.key_type_name import KEY_TYPE_NAME
 
 
 class ListCommandContent():

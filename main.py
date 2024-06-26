@@ -5,9 +5,9 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from component.welcome import WelcomeView
-from constants.db.guild_info import DB_GUILD_INFO
-from constants.db.log_info import DB_LOG_INFO
-from contents.general import GeneralContent
+from constant.db.guild_info import DB_GUILD_INFO
+from constant.db.log_info import DB_LOG_INFO
+from content.general import GeneralContent
 
 from utils import general
 from utils.logs import LogUtils
@@ -19,7 +19,6 @@ DATABASE_NAME = os.getenv('DATABASE_NAME')
 GUILD_COLLECTION_NAME = os.getenv('GUILD_COLLECTION_NAME')
 DATABASE_URI = os.getenv('MONGODB_URL')
 
-#intents=discord.Intents.all(),)
 intents = discord.Intents.default()
 intents.messages = True
 intents.message_content = True
@@ -30,9 +29,7 @@ bot = discord.Bot(intents=intents)
 
 @bot.event
 async def on_ready():
-    # should update all time out embed
     bot.add_view(WelcomeView())
-    # bot.add_view(component.BasicViewComponent())
     game = discord.Game(GeneralContent.discord_presence)
     await bot.change_presence(status=discord.Status.idle, activity=game)
 
@@ -46,7 +43,6 @@ async def on_ready():
                 query_val=guild.id,
         ):
             await general.initialize_for_guild(guild)
-            # await guild.leave()
             print(GeneralContent.dashboard_init_guild(idx=idx + 1, bot=bot, guild=guild))
         else:
             await general.update_server_dashboard(guild)
@@ -129,9 +125,8 @@ async def on_guild_update(before_guild: discord.Guild, after_guild: discord.Guil
     )
 
 
-if __name__ == '__main__':  # import cogs from cogs folder
+if __name__ == '__main__':
     # Create a new client and connect to the server
-
     client = MongoDBUtils.get_mongodb_client(DATABASE_URI)
 
     try:
@@ -144,8 +139,8 @@ if __name__ == '__main__':  # import cogs from cogs folder
 
     print(GeneralContent.divider)
 
-    for cog in [p.stem for p in Path('.').glob('./cogs/*.py')]:
-        bot.load_extension(f'cogs.{cog}')
+    for cog in [p.stem for p in Path('.').glob('./cog/*.py')]:
+        bot.load_extension(f'cog.{cog}')
         print(GeneralContent.module_loaded(cog_name=cog))
     print(GeneralContent.divider)
 

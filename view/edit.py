@@ -3,8 +3,8 @@ import discord
 from component.general import BasicViewComponent, AssignRoleSelector, RemoveRoleSelector, CancelButton
 from component.edit import KeepEditingButton, DoneButton, ActivateButton, RenameKeyButton, AdjustUsageLimitButton, GenMoreOTPsButton, EditAssignRoleButton, EditRemoveRoleButton, SaveRoleButton
 
-from constants.enum.key_type import KEY_TYPE
-from constants.db.key_info import DB_KEY_INFO
+from constant.enum.key_type import KEY_TYPE
+from constant.db.key_info import DB_KEY_INFO
 
 
 class EditView():
