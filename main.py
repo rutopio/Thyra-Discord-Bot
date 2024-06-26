@@ -95,6 +95,7 @@ async def on_guild_join(guild: discord.Guild):
         },
     )
     await general.initialize_for_guild(guild)
+    print(GeneralContent.guild_joined(guild=guild))
 
 
 @bot.event
@@ -113,6 +114,7 @@ async def on_guild_remove(guild: discord.Guild):
         query_val=guild.id,
         from_collection_name=GUILD_COLLECTION_NAME,
     )
+    print(GeneralContent.guild_left(guild=guild))
 
 
 @bot.event

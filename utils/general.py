@@ -10,6 +10,7 @@ from utils import general
 
 from embed.bot import BotEmbed
 from contents.embed.general import GeneralEmbedContent
+from contents.general import GeneralContent
 
 from constants.enum.context_type import CONTEXT_TYPE
 from constants.db.guild_info import DB_GUILD_INFO
@@ -157,8 +158,6 @@ async def initialize_for_guild(guild):
             DB_GUILD_INFO.KEYS_UID: {},
             DB_GUILD_INFO.KEYS_INFO: {},
         }
-
-        print('new documents:', record_info)
 
         query_key = {DB_GUILD_INFO.ID: guild.id}
         MongoDBUtils.update_to_database(
