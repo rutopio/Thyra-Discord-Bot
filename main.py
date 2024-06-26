@@ -136,6 +136,7 @@ if __name__ == '__main__':
     except Exception as e:
         print(e)
         print(GeneralContent.mongodb_connected_failed())
+        return
 
     print(GeneralContent.divider)
 

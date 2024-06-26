@@ -30,7 +30,7 @@ You can restrict access to certain private channels and create a Key for specifi
 
 ## Features
 
-- No need for an additional Dashboard. Create, edit, list, or remove Keys in Discord easily by Slash Commands.
+- No need for an additional Dashboard. Create, edit, list, and remove Keys in Discord easily by Slash Commands.
 - Verify in Discord directly, without opening a browser or redirecting to an external website.
 - Generate multiple One-Time PINs for a Key, which allowing admin to identify the member who use it.
 - Track which and when Keys members have used, and the relationship between PIN and member.
