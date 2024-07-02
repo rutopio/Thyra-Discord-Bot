@@ -32,7 +32,7 @@ brew update
 brew install mongodb-community@7.0
 ```
 
-2. Run MongoDB in local.
+2. Run MongoDB in local server.
 
 ```
 # To run MongoDB (i.e. the mongod process) as a macOS service, run:
@@ -46,7 +46,7 @@ brew services list
 brew services stop mongodb-community@7.0
 ```
 
-3. *(Optional, but Recommended)* Follow [Tutorial](https://www.mongodb.com/docs/compass/master/install/), download and install [MongoDB Compass GUI](https://www.mongodb.com/try/download/compass).
+3. *(Optional, but Recommended if you prefer to use GUI tool)* Follow [Tutorial](https://www.mongodb.com/docs/compass/master/install/), download and install [MongoDB Compass GUI](https://www.mongodb.com/try/download/compass).
 
 4. Make sure that MongoDB is running, open MongoDB Compass GUI and make a new connection to localhost.
 
@@ -54,7 +54,7 @@ brew services stop mongodb-community@7.0
 
 5. Copy localhost URI as connection string (it should start with `mongodb://localhost...`) to `.env` file.
 
-4. Create two *Databases* under the Cluster: 
+6. Create two *Databases*: 
    - `bot`: to store data about servers being served by the bot
      - Create two *Collections* named `guild` and `user` under this Database.
    - `abandon`: to store data about servers that are no longer being served, for example, when the bot is removed from a server, its data would be archived into this Database.

@@ -10,6 +10,8 @@
 
 ![](images/logo/Thyra-banner.png)
 
+[🔗 View Thyra Official Website 🔗](https://thyra.pages.dev/)
+
 Let server members unlock roles based on the Key and PIN they input. 
 
 Track the origins of members by Key and One-Time PINs.
@@ -204,7 +206,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 5. Open a PR
 
 
-## Contact Me and Support
+## Contact Me & Support Thyra
 
 [![](https://img.shields.io/badge/Buy_Me_A_Bubble_Tea-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/chingru)
 
@@ -214,7 +216,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 - 👤｜[LinkedIn](https://www.linkedin.com/in/ching-ru/)
 - 🧋｜If you like my projects, you can [Buy Me a Bubble Tea](https://buymeacoffee.com/chingru)!
 
-Don't forget to give the project a star! Thanks again!
+Don't forget to give the project a **STAR**! Thanks you!
 
 
 ## Reference
