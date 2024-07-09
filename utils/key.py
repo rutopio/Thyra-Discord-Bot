@@ -1,6 +1,5 @@
 import os
 import discord
-import pytz
 from dotenv import load_dotenv
 
 import datetime
@@ -331,9 +330,9 @@ class KeyUtils():
         user_details_in_key = key[DB_KEY_INFO.USED_MEMBERS][str(member_id)]
         max_count = key[DB_KEY_INFO.COUNT] if key[DB_KEY_INFO.COUNT] > 0 else KeyUtilsContent.inf_mark
 
-        user_joined_guild_datetime = user_data['joined_at'].replace(tzinfo=pytz.timezone('UTC'))
+        user_joined_guild_datetime = user_data['joined_at']
         user_used_key_datetime = datetime.datetime.fromtimestamp(
-            user_details_in_key[DB_KEY_INFO.USED_MEMBERS__TIMESTAMP]).replace(tzinfo=pytz.timezone('UTC'))
+            user_details_in_key[DB_KEY_INFO.USED_MEMBERS__TIMESTAMP], tz=datetime.timezone.utc)
 
         time_between_joined_and_use_key = TimeUtils.get_timedelta_between_joined_and_use_key(
             user_joined_guild_datetime, user_used_key_datetime)

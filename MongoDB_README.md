@@ -2,7 +2,7 @@
 
 You can [host MongoDB yourself](#self-hosting), but we recommend using [MongoDB Atlas](#mongodb-atlas). They offer a free tier for light usage and make it easy to extend if needed.
 
-## MongoDB Atlas
+## Using MongoDB Atlas
 
 1. Follow the [MongoDB Atlas Official Tutorial](https://www.mongodb.com/resources/products/platform/mongodb-atlas-tutorial) to create your account, first Project and first Cluster (M0 Cluster for free tier). 
    
