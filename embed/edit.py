@@ -1,10 +1,9 @@
 import discord
 
-from content.embed.edit import EditEmbedContent
-
 from constant.constants import CONSTANT
 from constant.db.key_info import DB_KEY_INFO
 from constant.edit_operation import EDIT_OPERATION
+from content.embed.edit import EditEmbedContent
 from utils.role import RoleUtils
 from utils.key import KeyUtils
 

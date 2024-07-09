@@ -3,8 +3,8 @@ from discord.ext import commands
 
 from content.commands.edit import EditCommandContent
 from embed.general import GeneralEmbed
-from utils import general
 from utils.key import KeyUtils
+from utils import general
 
 
 class EditCogs(commands.Cog):

@@ -1,18 +1,14 @@
 import os
-import discord
-import traceback
 from dotenv import load_dotenv
 
-from component.welcome import WelcomeView
+import discord
 
-from embed.set import SetEmbed
-from embed.bot import BotEmbed
-
-from content.view.set import SetViewContent
-
-from constant.guild_operation import GUILD_OPERATION
 from constant.db.guild_info import DB_GUILD_INFO
-
+from constant.guild_operation import GUILD_OPERATION
+from content.view.set import SetViewContent
+from component.welcome import WelcomeView
+from embed.bot import BotEmbed
+from embed.set import SetEmbed
 from utils.logs import LogUtils
 from utils.mongodb import MongoDBUtils
 from utils import general
@@ -58,7 +54,6 @@ class SetDashboardChannelConfirmButton(discord.ui.Button):
                     if announcement_message:
                         await announcement_message.delete()
                 except:
-                    print(traceback.format_exc())
                     # dialog does not exist, nothing to do
                     pass
 
@@ -138,7 +133,6 @@ class SetVerificationChannelConfirmButton(discord.ui.Button):
                     if announcement_message:
                         await announcement_message.delete()
                 except:
-                    print(traceback.format_exc())
                     # dialog does not exist, nothing to do
                     pass
             channel_mention = new_verification_channel.mention

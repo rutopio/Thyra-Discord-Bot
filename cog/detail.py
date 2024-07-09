@@ -1,15 +1,12 @@
 import discord
 from discord.ext import commands
 
-from content.commands.detail import DetailCommandContent
-
-from embed.detail import DetailEmbed
-from embed.general import GeneralEmbed
-
-from view.detail import DetailView
-
 from constant.db.key_info import DB_KEY_INFO
 from constant.enum.key_type import KEY_TYPE
+from content.commands.detail import DetailCommandContent
+from embed.detail import DetailEmbed
+from embed.general import GeneralEmbed
+from view.detail import DetailView
 from utils.key import KeyUtils
 from utils import general
 

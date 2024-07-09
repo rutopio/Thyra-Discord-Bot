@@ -4,8 +4,8 @@ from discord.ext import commands
 from content.commands.remove import RemoveCommandContent
 from embed.general import GeneralEmbed
 from view.remove import RemoveView
-from utils import general
 from utils.key import KeyUtils
+from utils import general
 
 
 class RemoveCogs(commands.Cog):

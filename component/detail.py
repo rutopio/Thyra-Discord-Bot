@@ -1,10 +1,7 @@
 import discord
 
-from component.general import BasicViewComponent
-
-from content.view.detail import DetailViewContent
 from constant.db.key_info import DB_KEY_INFO
-
+from content.view.detail import DetailViewContent
 from utils.key import KeyUtils
 from utils import general
 

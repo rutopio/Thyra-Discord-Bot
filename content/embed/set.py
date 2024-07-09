@@ -1,5 +1,5 @@
-from constant.enum.context_type import CONTEXT_TYPE
 from constant.constants import CONSTANT
+from constant.enum.context_type import CONTEXT_TYPE
 from utils import general
 
 

@@ -133,16 +133,15 @@ if __name__ == '__main__':
         # Send a ping to confirm a successful connection
         print(client.admin.command('ping'))
         print(GeneralContent.mongodb_connected_successfully())
+        print(GeneralContent.divider)
+
+        for cog in [p.stem for p in Path('.').glob('./cog/*.py')]:
+            bot.load_extension(f'cog.{cog}')
+            print(GeneralContent.module_loaded(cog_name=cog))
+        print(GeneralContent.divider)
+
+        bot.run(DISCORD_TOKEN)
+
     except Exception as e:
         print(e)
         print(GeneralContent.mongodb_connected_failed())
-        return
-
-    print(GeneralContent.divider)
-
-    for cog in [p.stem for p in Path('.').glob('./cog/*.py')]:
-        bot.load_extension(f'cog.{cog}')
-        print(GeneralContent.module_loaded(cog_name=cog))
-    print(GeneralContent.divider)
-
-bot.run(DISCORD_TOKEN)

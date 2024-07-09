@@ -1,4 +1,5 @@
 import discord
+
 from content.view.component import ComponentViewContent
 
 

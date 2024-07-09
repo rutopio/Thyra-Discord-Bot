@@ -1,7 +1,7 @@
 import discord
 
-from content.embed.general import GeneralEmbedContent
 from constant.constants import CONSTANT
+from content.embed.general import GeneralEmbedContent
 
 
 class GeneralEmbed():

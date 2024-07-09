@@ -18,6 +18,7 @@ You can [host MongoDB yourself](#self-hosting), but we recommend using [MongoDB 
    - `bot`: to store data about servers being served by the bot
      - Create two *Collections* named `guild` and `user` under this Database.
    - `abandon`: to store data about servers that are no longer being served, for example, when the bot is removed from a server, its data would be archived into this Database.
+     -  Create one *Collection* named `guild_left` under this Database.
   - The names of the Database and Collections can be anything you want, but remember to replace their names into `.env` file later.
 
 ![](images/mongodb.png)
@@ -58,6 +59,7 @@ brew services stop mongodb-community@7.0
    - `bot`: to store data about servers being served by the bot
      - Create two *Collections* named `guild` and `user` under this Database.
    - `abandon`: to store data about servers that are no longer being served, for example, when the bot is removed from a server, its data would be archived into this Database.
+     -  Create one *Collection* named `guild_left` under this Database.
   - The names of the Database and Collections can be anything you want, but remember to replace their names into `.env` file later.
 
 ![](images/mongodb-self-host.png)

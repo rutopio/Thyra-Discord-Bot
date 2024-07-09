@@ -1,10 +1,10 @@
 from constant.enum.context_type import CONTEXT_TYPE
 from constant.key_type_name import KEY_TYPE_NAME
 from content.commands.create import CreateCommandContent
-from content.commands.edit import EditCommandContent
 from content.commands.detail import DetailCommandContent
-from content.commands.remove import RemoveCommandContent
+from content.commands.edit import EditCommandContent
 from content.commands.list import ListCommandContent
+from content.commands.remove import RemoveCommandContent
 from content.commands.set import SetCommandContent
 from utils import general
 
